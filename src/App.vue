@@ -1,14 +1,17 @@
 <template>
   <div id="app">
-     <h1>{{ msg }}</h1>
+     <message>Welcome to My Vue App</message>
+     <message>Presenting by Vue-World</message>
   </div>
 </template>
 
 <script>
+import Message  from './components/Message.vue';
 export default {
   name: 'app',
+  components: { Message },
   data () {
-    return {  msg: 'Welcome to My Vue App' }
+    return {   }
   }
 }
 </script>
